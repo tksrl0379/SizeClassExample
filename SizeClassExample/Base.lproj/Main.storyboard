@@ -1,24 +1,257 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SizeClassExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bme-h3-wnr">
+                                <rect key="frame" x="44" y="0.0" width="411" height="182"/>
+                                <color key="backgroundColor" systemColor="separatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="411" id="5ye-N7-tOs"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5ye-N7-tOs"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="5ye-N7-tOs"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7NX-Pe-B42">
+                                <rect key="frame" x="455" y="0.0" width="397" height="182"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="397" id="lxl-OA-Uv4"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="lxl-OA-Uv4"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="lxl-OA-Uv4"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ova-yR-ObZ">
+                                <rect key="frame" x="44" y="182" width="411" height="183"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="183" id="2eR-S7-Ngq"/>
+                                    <constraint firstAttribute="width" constant="411" id="WIH-iz-m19"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="2eR-S7-Ngq"/>
+                                        <exclude reference="WIH-iz-m19"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="2eR-S7-Ngq"/>
+                                        <include reference="WIH-iz-m19"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xbg-FM-zvU">
+                                <rect key="frame" x="455" y="182" width="397" height="183"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="183" id="ggl-2R-1P8"/>
+                                    <constraint firstAttribute="width" constant="397" id="wNd-wD-5j2"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ggl-2R-1P8"/>
+                                        <exclude reference="wNd-wD-5j2"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="ggl-2R-1P8"/>
+                                        <include reference="wNd-wD-5j2"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7NX-Pe-B42" firstAttribute="height" secondItem="bme-h3-wnr" secondAttribute="height" id="04r-lp-XVJ"/>
+                            <constraint firstItem="bme-h3-wnr" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.22" id="0gp-xm-c4X"/>
+                            <constraint firstItem="xbg-FM-zvU" firstAttribute="height" secondItem="ova-yR-ObZ" secondAttribute="height" id="0uM-8S-xZ5"/>
+                            <constraint firstItem="ova-yR-ObZ" firstAttribute="top" secondItem="bme-h3-wnr" secondAttribute="bottom" id="4AT-SA-Rij"/>
+                            <constraint firstItem="bme-h3-wnr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8SU-On-EQk"/>
+                            <constraint firstItem="7NX-Pe-B42" firstAttribute="top" secondItem="bme-h3-wnr" secondAttribute="bottom" id="9K8-Lg-Sck"/>
+                            <constraint firstItem="xbg-FM-zvU" firstAttribute="leading" secondItem="ova-yR-ObZ" secondAttribute="trailing" id="ABA-7l-g9q"/>
+                            <constraint firstItem="ova-yR-ObZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="AMX-dy-Oyv"/>
+                            <constraint firstItem="ova-yR-ObZ" firstAttribute="top" secondItem="7NX-Pe-B42" secondAttribute="bottom" id="Axm-oY-fR5"/>
+                            <constraint firstItem="7NX-Pe-B42" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KK8-J9-yca"/>
+                            <constraint firstItem="bme-h3-wnr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KKt-pC-fcx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ova-yR-ObZ" secondAttribute="bottom" constant="28" id="PEK-Nd-p6e"/>
+                            <constraint firstItem="7NX-Pe-B42" firstAttribute="leading" secondItem="bme-h3-wnr" secondAttribute="trailing" id="PxH-iw-1PI"/>
+                            <constraint firstItem="7NX-Pe-B42" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Yww-QF-YX6"/>
+                            <constraint firstItem="7NX-Pe-B42" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dHC-Fr-CmS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xbg-FM-zvU" secondAttribute="bottom" constant="28" id="djm-LX-6hM"/>
+                            <constraint firstItem="xbg-FM-zvU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fJA-gg-E0v"/>
+                            <constraint firstItem="xbg-FM-zvU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fT7-bO-MGH"/>
+                            <constraint firstItem="xbg-FM-zvU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="h8h-yN-77P"/>
+                            <constraint firstItem="7NX-Pe-B42" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kww-Xd-aFU"/>
+                            <constraint firstItem="xbg-FM-zvU" firstAttribute="top" secondItem="7NX-Pe-B42" secondAttribute="bottom" id="l0A-OK-Pxq"/>
+                            <constraint firstItem="ova-yR-ObZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mrt-cE-7zV"/>
+                            <constraint firstItem="ova-yR-ObZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nQ1-lf-Cfa"/>
+                            <constraint firstItem="ova-yR-ObZ" firstAttribute="height" secondItem="7NX-Pe-B42" secondAttribute="height" id="qQO-Ax-j4L"/>
+                            <constraint firstItem="bme-h3-wnr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rpC-Ex-yaP"/>
+                            <constraint firstItem="bme-h3-wnr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uCY-gh-IlX"/>
+                            <constraint firstItem="xbg-FM-zvU" firstAttribute="top" secondItem="ova-yR-ObZ" secondAttribute="bottom" id="ubE-bs-xUg"/>
+                            <constraint firstItem="bme-h3-wnr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xsk-f9-c93"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="PEK-Nd-p6e"/>
+                                <exclude reference="djm-LX-6hM"/>
+                                <exclude reference="KKt-pC-fcx"/>
+                                <exclude reference="xsk-f9-c93"/>
+                                <exclude reference="4AT-SA-Rij"/>
+                                <exclude reference="nQ1-lf-Cfa"/>
+                                <exclude reference="KK8-J9-yca"/>
+                                <exclude reference="PxH-iw-1PI"/>
+                                <exclude reference="dHC-Fr-CmS"/>
+                                <exclude reference="ABA-7l-g9q"/>
+                                <exclude reference="h8h-yN-77P"/>
+                                <exclude reference="l0A-OK-Pxq"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="PEK-Nd-p6e"/>
+                                <include reference="djm-LX-6hM"/>
+                                <exclude reference="0gp-xm-c4X"/>
+                                <exclude reference="8SU-On-EQk"/>
+                                <include reference="KKt-pC-fcx"/>
+                                <exclude reference="rpC-Ex-yaP"/>
+                                <exclude reference="uCY-gh-IlX"/>
+                                <include reference="xsk-f9-c93"/>
+                                <include reference="4AT-SA-Rij"/>
+                                <exclude reference="AMX-dy-Oyv"/>
+                                <exclude reference="Axm-oY-fR5"/>
+                                <exclude reference="mrt-cE-7zV"/>
+                                <include reference="nQ1-lf-Cfa"/>
+                                <exclude reference="qQO-Ax-j4L"/>
+                                <exclude reference="04r-lp-XVJ"/>
+                                <exclude reference="9K8-Lg-Sck"/>
+                                <include reference="KK8-J9-yca"/>
+                                <include reference="PxH-iw-1PI"/>
+                                <exclude reference="Yww-QF-YX6"/>
+                                <include reference="dHC-Fr-CmS"/>
+                                <exclude reference="kww-Xd-aFU"/>
+                                <exclude reference="0uM-8S-xZ5"/>
+                                <include reference="ABA-7l-g9q"/>
+                                <exclude reference="fJA-gg-E0v"/>
+                                <exclude reference="fT7-bO-MGH"/>
+                                <include reference="h8h-yN-77P"/>
+                                <include reference="l0A-OK-Pxq"/>
+                                <exclude reference="ubE-bs-xUg"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139.95535714285714" y="102.89855072463769"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Zs1-xX-Dva">
+            <objects>
+                <viewController id="c6d-wt-Vvk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nSf-pk-lzU">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5X9-6p-feC">
+                                <rect key="frame" x="64" y="220" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Cyt-8f-Kj2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Cyt-8f-Kj2" firstAttribute="trailing" secondItem="5X9-6p-feC" secondAttribute="trailing" constant="110" id="Bp6-bK-DCB"/>
+                            <constraint firstItem="Cyt-8f-Kj2" firstAttribute="bottom" secondItem="5X9-6p-feC" secondAttribute="bottom" constant="514" id="HnV-Bk-Ini"/>
+                            <constraint firstItem="5X9-6p-feC" firstAttribute="leading" secondItem="Cyt-8f-Kj2" secondAttribute="leading" constant="64" id="MV3-24-3gD"/>
+                            <constraint firstItem="Cyt-8f-Kj2" firstAttribute="trailing" secondItem="5X9-6p-feC" secondAttribute="trailing" constant="548" id="X2u-fJ-vRS"/>
+                            <constraint firstItem="5X9-6p-feC" firstAttribute="top" secondItem="Cyt-8f-Kj2" secondAttribute="top" constant="220" id="g7P-KQ-g2i"/>
+                            <constraint firstItem="5X9-6p-feC" firstAttribute="top" secondItem="Cyt-8f-Kj2" secondAttribute="top" constant="176" id="ksw-uG-San"/>
+                            <constraint firstItem="Cyt-8f-Kj2" firstAttribute="bottom" secondItem="5X9-6p-feC" secondAttribute="bottom" constant="45" id="pGV-dH-cdr"/>
+                            <constraint firstItem="5X9-6p-feC" firstAttribute="leading" secondItem="Cyt-8f-Kj2" secondAttribute="leading" constant="20" id="wy0-jH-zv7"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Bp6-bK-DCB"/>
+                                <exclude reference="HnV-Bk-Ini"/>
+                                <exclude reference="X2u-fJ-vRS"/>
+                                <exclude reference="pGV-dH-cdr"/>
+                                <exclude reference="MV3-24-3gD"/>
+                                <exclude reference="g7P-KQ-g2i"/>
+                                <exclude reference="ksw-uG-San"/>
+                                <exclude reference="wy0-jH-zv7"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="X2u-fJ-vRS"/>
+                                <include reference="pGV-dH-cdr"/>
+                                <include reference="g7P-KQ-g2i"/>
+                                <include reference="wy0-jH-zv7"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Bp6-bK-DCB"/>
+                                <include reference="HnV-Bk-Ini"/>
+                                <include reference="MV3-24-3gD"/>
+                                <include reference="ksw-uG-San"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KWh-D1-LR1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="931" y="83"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
